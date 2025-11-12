@@ -16,59 +16,73 @@ Use **only** the fonts and colors provided below. Do not introduce new fonts or 
 
 /** Ultra Light */
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 100;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+	font-family: 'San Francisco';
+	font-weight: 100;
+	src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff');
 }
 
 /** Thin */
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 200;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+	font-family: 'San Francisco';
+	font-weight: 200;
+	src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff');
 }
 
 /** Regular */
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+	font-family: 'San Francisco';
+	font-weight: 400;
+	src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff');
 }
 
 /** Medium */
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 500;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+	font-family: 'San Francisco';
+	font-weight: 500;
+	src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff');
 }
 
 /** Semi Bold */
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 600;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+	font-family: 'San Francisco';
+	font-weight: 600;
+	src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff');
 }
 
 /** Bold */
 @font-face {
-  font-family: "San Francisco";
-  font-weight: 700;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+	font-family: 'San Francisco';
+	font-weight: 700;
+	src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff');
 }
 
 * {
-  font-family: "San Francisco";
+	font-family: 'San Francisco';
 }
 
-h1 { font-weight: 700; }
-h2 { font-weight: 600; }
-h3 { font-weight: 500; }
-p { font-weight: 400; }
-p.thin { font-weight: 200; }
-p.ultralight { font-weight: 100; }
+h1 {
+	font-weight: 700;
+}
+h2 {
+	font-weight: 600;
+}
+h3 {
+	font-weight: 500;
+}
+p {
+	font-weight: 400;
+}
+p.thin {
+	font-weight: 200;
+}
+p.ultralight {
+	font-weight: 100;
+}
 
 /* Primary color */
-:root { --primary: #00c307; }
+:root {
+	--primary: #00c307;
+}
 ```
 
 ---
@@ -87,41 +101,41 @@ p.ultralight { font-weight: 100; }
 
 1. **Explore `demo/` first**
 
-   * Read every file under `demo/`. Understand available components, props, styles, and any example usage.
-   * Produce a single master list (file) of **all available components** found in `demo/`.
+    - Read every file under `demo/`. Understand available components, props, styles, and any example usage.
+    - Produce a single master list (file) of **all available components** found in `demo/`.
 
 2. **Create the components list in `starter/`**
 
-   * Add a file at `starter/COMPONENTS_FROM_DEMO.md` (or JSON if preferred) listing component names, file paths, and a one-line description for each.
-   * This list is the directory map the team will use going forward.
+    - Add a file at `starter/COMPONENTS_FROM_DEMO.md` (or JSON if preferred) listing component names, file paths, and a one-line description for each.
+    - This list is the directory map the team will use going forward.
 
 3. **Build pages only in `starter/`**
 
-   * Create pages, experiments and playgrounds in `starter/` using components from `demo/` as-is.
-   * Never move or copy components into `starter/` for permanent edits. If you need a modified component, create a wrapper in `starter/` that composes the `demo/` component.
+    - Create pages, experiments and playgrounds in `starter/` using components from `demo/` as-is.
+    - Never move or copy components into `starter/` for permanent edits. If you need a modified component, create a wrapper in `starter/` that composes the `demo/` component.
 
 4. **Experiment → Approve → Freeze**
 
-   * Iterate on pages in `starter/` until the design owner (you or me) says “satisfied”.
-   * Once approved, **freeze** the page version and tag the commit (e.g. `ui/freeze/<page-name>`).
+    - Iterate on pages in `starter/` until the design owner (you or me) says "satisfied".
+    - Once approved, **freeze** the page version and tag the commit (e.g. `ui/freeze/<page-name>`).
 
 5. **Component changes process (rare & formal)**
 
-   * If a component in `demo/` absolutely must change, open a PR describing why, include before/after usage examples and get explicit approval.
-   * Until the PR merges, do all experiments in `starter/` via wrappers.
+    - If a component in `demo/` absolutely must change, open a PR describing why, include before/after usage examples and get explicit approval.
+    - Until the PR merges, do all experiments in `starter/` via wrappers.
 
 6. **No UI outside these rules**
 
-   * If a quick hack is required for a demo, still work in `starter/` and mark it `TEMP — remove after demo`.
+    - If a quick hack is required for a demo, still work in `starter/` and mark it `TEMP — remove after demo`.
 
 ---
 
 ## File & Commit Conventions
 
-* Branch for donor snapshot: `donor` (contains untouched copies of `demo/` and `starter/`).
-* Feature branches should be `ui/<short-description>`.
-* PR title format: `[UI] <short-summary> — <demo-component-used>`.
-* Tag frozen pages like: `ui/freeze/<page-name>@<YYYYMMDD>`.
+-   Branch for donor snapshot: `donor` (contains untouched copies of `demo/` and `starter/`).
+-   Feature branches should be `ui/<short-description>`.
+-   PR title format: `[UI] <short-summary> — <demo-component-used>`.
+-   Tag frozen pages like: `ui/freeze/<page-name>@<YYYYMMDD>`.
 
 ---
 
@@ -135,11 +149,11 @@ p.ultralight { font-weight: 100; }
 
 ## Quick Checklist (use before every change)
 
-* [ ] Did I read `demo/` fully for the component I want to use?
-* [ ] Am I editing `starter/` and not `demo/`?
-* [ ] Am I using only the provided fonts and colors?
-* [ ] Did I create/confirm `donor` branch snapshot?
-* [ ] If modifying `demo/`, did I open a PR with justification and approvals?
+-   [ ] Did I read `demo/` fully for the component I want to use?
+-   [ ] Am I editing `starter/` and not `demo/`?
+-   [ ] Am I using only the provided fonts and colors?
+-   [ ] Did I create/confirm `donor` branch snapshot?
+-   [ ] If modifying `demo/`, did I open a PR with justification and approvals?
 
 ---
 
