@@ -1,7 +1,7 @@
-import ChatProvider from '@/../../demo/src/app/(protected-pages)/concepts/ai/chat/_components/ChatProvider'
-import ChatView from '@/../../demo/src/app/(protected-pages)/concepts/ai/chat/_components/ChatView'
-import ChatHistoryRenameDialog from '@/../../demo/src/app/(protected-pages)/concepts/ai/chat/_components/ChatHistoryRenameDialog'
-import getChatHistory from '@/../../demo/src/server/actions/getChatHistory'
+import ChatProvider from '../../../../../demo/src/app/(protected-pages)/concepts/ai/chat/_components/ChatProvider'
+import ChatView from '../../../../../demo/src/app/(protected-pages)/concepts/ai/chat/_components/ChatView'
+import ChatHistoryRenameDialog from '../../../../../demo/src/app/(protected-pages)/concepts/ai/chat/_components/ChatHistoryRenameDialog'
+import getChatHistory from '../../../../../demo/src/server/actions/getChatHistory'
 
 export default async function Page() {
     const chatHistory = await getChatHistory()
