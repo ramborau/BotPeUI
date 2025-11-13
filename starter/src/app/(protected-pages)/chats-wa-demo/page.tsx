@@ -1,11 +1,18 @@
-export default function Page() {
+import ChatProvider from '../../../../../demo/src/app/(protected-pages)/concepts/ai/chat/_components/ChatProvider'
+import ChatView from '../../../../../demo/src/app/(protected-pages)/concepts/ai/chat/_components/ChatView'
+import ChatHistoryRenameDialog from '../../../../../demo/src/app/(protected-pages)/concepts/ai/chat/_components/ChatHistoryRenameDialog'
+import getChatHistory from '../../../../../demo/src/server/actions/getChatHistory'
+
+export default async function Page() {
+    const chatHistory = await getChatHistory()
     return (
-        <div className="h-screen w-full flex items-center justify-center bg-gray-50">
-            <div className="text-center">
-                <h1 className="text-4xl font-bold mb-4">ChatsWaDemo</h1>
-                <p className="text-gray-600">Chat page is working!</p>
-                <p className="text-sm text-gray-400 mt-2">Route: /chats-wa-demo</p>
+        <ChatProvider chatHistory={chatHistory}>
+            <div className="h-full">
+                <div className="flex flex-auto h-full">
+                    <ChatView />
+                    <ChatHistoryRenameDialog />
+                </div>
             </div>
-        </div>
+        </ChatProvider>
     )
 }
