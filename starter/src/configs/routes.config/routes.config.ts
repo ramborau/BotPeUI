@@ -10,6 +10,14 @@ export const protectedRoutes: Routes = {
             pageContainerType: 'contained',
         },
     },
+    '/chats-wa-demo': {
+        key: 'chatsWaDemo',
+        authority: [],
+        meta: {
+            layout: 'blank',
+            pageContainerType: 'gutterless',
+        },
+    },
 }
 
 export const publicRoutes: Routes = {}
